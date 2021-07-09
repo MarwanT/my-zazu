@@ -1,11 +1,59 @@
 interface Food {
     name: string
-    color: string // TODO: Create enum of the basic colors
-    size: string // TODO: Create enum for size
+    color: Color 
+    size: Size
     calories: number
-    vitamins: string // TODO: 1- Create enum with 3 vitamins list | 2- Make this field an array of vitamins
+    vitamins: Vitamin[]
 }
 
-/**
- * TODO: Create Two food classes for example: Vegetable and Fruits that extend Food interface
- */
+enum Color {
+    ORANGE,
+    BLUE,
+    BLACK,
+    RED,
+    WHITE,
+    PINK,
+    PURPLE,
+    GREEN
+}
+
+enum Size {
+    SMALL,
+    MEDIUM,
+    LARGE
+}
+
+enum Vitamin {
+    A,
+    B,
+    C,
+    D,
+    IDK
+}
+
+class Vegetable implements Food {
+    name: string;
+    color: Color = Color.GREEN;
+    size: Size = Size.MEDIUM;
+    calories: number = 35;
+    vitamins: Vitamin[] = [
+        Vitamin.A,
+        Vitamin.B,
+        Vitamin.C
+    ];
+}
+
+class Fruit implements Food {
+    name: string;
+    color: Color;
+    size: Size = Size.SMALL;
+    calories: number = 75;
+    vitamins: Vitamin[] = [
+        Vitamin.A,
+        Vitamin.B,
+        Vitamin.C,
+        Vitamin.D,
+        Vitamin.IDK
+    ];
+    
+}

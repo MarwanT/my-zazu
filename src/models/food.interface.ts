@@ -13,7 +13,8 @@ enum Color {
     RED,
     WHITE,
     PINK,
-    PURPLE
+    PURPLE,
+    GREEN
 }
 
 enum Size {
@@ -29,6 +30,7 @@ enum Vitamin {
     D,
     IDK
 }
+
 
 /**
  * TODO: Create Two food classes for example: Vegetable and Fruits that extend Food interface

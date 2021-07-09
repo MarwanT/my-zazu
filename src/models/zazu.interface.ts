@@ -5,7 +5,14 @@ interface Zazu {
     canSwim: boolean
     canFly: boolean
     canWalk: boolean
-    type: string // TODO: Create Type enum listing two options at least: Animal or Plant
+    type: ZazuType // TODO: Create Type enum listing two options at least: Animal or Plant
 }
+
+enum ZazuType {
+    Animal = "animal",
+    Manager = "plant",
+}
+
+
 
 // TODO: Create Two type of Zazus for example: Cat, Dog, Animal

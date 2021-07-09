@@ -33,4 +33,22 @@ class Dog implements Zazu {
     }
 }
 
-// TODO: Create Two type of Zazus for example: Cat, Dog, Animal
+class Cat implements Zazu {
+    name: string
+    lastName: string
+    dob: Date
+    canSwim: boolean
+    canFly: boolean
+    canWalk: boolean
+    type: ZazuType
+
+    public constructor(name: string = "catName", lastName: string = "catLastName", dob: Date = new Date()) {
+        this.name = name;
+        this.lastName = lastName;
+        this.dob = dob;
+        this.canSwim = false;
+        this.canFly = false;
+        this.canWalk = true;
+        this.type = ZazuType.Animal
+    }
+}

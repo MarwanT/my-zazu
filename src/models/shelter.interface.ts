@@ -15,6 +15,12 @@ class House implements Shelter {
     floors: number
     cost: number
 }
-/**
- * TODO: Create At least Two type of shelters extend the Shelter interface
- */
+
+class Tent implements Shelter {
+    name: string
+    address: string
+    hasBathroom: boolean
+    canAccomodateGuests: boolean
+    isWaterproof: boolean
+    maxOccupants: number
+}

@@ -6,6 +6,21 @@ interface Shelter {
     isWaterproof: boolean
 }
 
-/**
- * TODO: Create At least Two type of shelters extend the Shelter interface
- */
+class House implements Shelter {
+    name: string
+    address: string
+    hasBathroom: boolean
+    canAccomodateGuests: boolean
+    isWaterproof: boolean
+    floors: number
+    cost: number
+}
+
+class Tent implements Shelter {
+    name: string
+    address: string
+    hasBathroom: boolean
+    canAccomodateGuests: boolean
+    isWaterproof: boolean
+    maxOccupants: number
+}

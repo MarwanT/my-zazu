@@ -31,7 +31,29 @@ enum Vitamin {
     IDK
 }
 
+class Vegetable implements Food {
+    name: string;
+    color: Color = Color.GREEN;
+    size: Size = Size.MEDIUM;
+    calories: number = 35;
+    vitamins: Vitamin[] = [
+        Vitamin.A,
+        Vitamin.B,
+        Vitamin.C
+    ];
+}
 
-/**
- * TODO: Create Two food classes for example: Vegetable and Fruits that extend Food interface
- */
+class Fruit implements Food {
+    name: string;
+    color: Color;
+    size: Size = Size.SMALL;
+    calories: number = 75;
+    vitamins: Vitamin[] = [
+        Vitamin.A,
+        Vitamin.B,
+        Vitamin.C,
+        Vitamin.D,
+        Vitamin.IDK
+    ];
+    
+}

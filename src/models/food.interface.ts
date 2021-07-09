@@ -3,7 +3,7 @@ interface Food {
     color: Color 
     size: Size
     calories: number
-    vitamins: string // TODO: 1- Create enum with 3 vitamins list | 2- Make this field an array of vitamins
+    vitamins: Vitamin[]
 }
 
 enum Color {
@@ -22,7 +22,13 @@ enum Size {
     LARGE
 }
 
-
+enum Vitamin {
+    A,
+    B,
+    C,
+    D,
+    IDK
+}
 
 /**
  * TODO: Create Two food classes for example: Vegetable and Fruits that extend Food interface

@@ -1,7 +1,7 @@
 interface Food {
     name: string
     color: Color 
-    size: string // TODO: Create enum for size
+    size: Size
     calories: number
     vitamins: string // TODO: 1- Create enum with 3 vitamins list | 2- Make this field an array of vitamins
 }
@@ -14,6 +14,12 @@ enum Color {
     WHITE,
     PINK,
     PURPLE
+}
+
+enum Size {
+    SMALL,
+    MEDIUM,
+    LARGE
 }
 
 
